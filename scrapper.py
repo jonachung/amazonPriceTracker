@@ -40,13 +40,13 @@ def send_email():
     server.starttls()
     server.ehlo()
 
-    server.login('hungjonathan@gmail.com', 'sghmgsiexkydlosn')
+    server.login('abc@gmail.com', 'sghmgsiexkydlosn')
     subject = "Price fell down!"
     body = "Item (%s) is within your budget! \n\nCheck the link: %s" % (title.strip(), URL)
 
     msg = "Subject: %s\n\n%s"  % (subject, body)
 
-    server.sendmail('hungjonathan@gmail.com', 'hungjonathan@gmail.com', msg)
+    server.sendmail('abc@gmail.com', 'hungjonathan@gmail.com', msg)
 
     print("Check your email!")
     emailSent = 0
